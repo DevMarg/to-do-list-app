@@ -19,12 +19,12 @@ function newItem() {
       li.toggleClass("opacity");
     });
 
-    //3(i). Adding the delete button "X":
+    //3. Adding the delete button "X":
     let crossOutButton = $("<crossOutButton></crossOutButton>");
     $(crossOutButton).append("X");
     li.append(crossOutButton);
 
-    //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
+    //3. Adding class "delete" (display:none) from the css:
 
     crossOutButton.on("click", function () {
       li.addClass("delete");
